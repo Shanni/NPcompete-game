@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hackathon</title>
+        <script src="//cdn.jsdelivr.net/phaser/2.6.2/phaser.min.js"></script>
+        <script type = "text/javascript" src="js/welcome.js"></script>
+        <script type = "text/javascript" src="js/play.js"></script>
+        <script type = "text/javascript" src="js/map.js"></script>
+
+    </head>
+    <body>
+    <script>
+  		(function() {
+		var game = new Phaser.Game(800, 600, Phaser.AUTO, 'Game');
+    	game.state.add('welcome', Code.welcome);
+        game.state.add('play', Code.play);
+        game.state.add('map', Code.map);
+   		game.state.start('welcome');
+        })();
+    </script>
+    </body>
+</html>
